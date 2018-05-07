@@ -5,7 +5,7 @@ def fibonacci():
 		if b % 2 == 0:
 			counter += 1;
 			print b;
-		elif counter == 10:
+		if counter == 10:
 			break;
 		a,b = b, a+b;
 		
