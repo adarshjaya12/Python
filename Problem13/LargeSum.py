@@ -106,8 +106,11 @@ largeSum ="""
 
 
 nList = largeSum.split('\n')
+# Make sure no empty array in the list
 nList = filter(lambda x: x != '',nList)
-numberList = [int(i) for i in nList]
+#Convert string to number
+numberList = map(lambda x: int(x),nList)
+#numberList = [int(i) for i in nList]
 
 totalSum = sum(numberList)
 
